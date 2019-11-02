@@ -1,0 +1,1 @@
+<view class="tabs-box"><view class="tabs-bar"><block wx:for="{{navList}}" wx:for-item="item" wx:for-index="index" wx:key="name"><view data-event-opts="{{[['tap',[['handleChange',[index]]]]]}}" class="{{['tabs-tab',[(item.name===currentName)?'tabs-active':'']]}}" bindtap="__e">{{item.label}}</view></block></view><view class="tabs-content"><slot></slot></view></view>

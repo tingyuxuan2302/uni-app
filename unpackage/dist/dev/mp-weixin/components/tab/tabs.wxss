@@ -1,0 +1,28 @@
+.tabs-box .tabs-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-x: scroll;
+  min-height: 56rpx;
+  line-height: 56rpx;
+}
+.tabs-box .tabs-bar .tabs-tab {
+  min-width: 25%;
+  text-align: center;
+  color: #666;
+  font-size: 28rpx;
+}
+.tabs-box .tabs-bar .tabs-active {
+  border-bottom: 4rpx solid #FB6345;
+}
+

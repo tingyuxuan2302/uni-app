@@ -1,0 +1,1 @@
+<view hidden="{{!(show)}}" class="{{['panel',className]}}"><slot></slot></view>
