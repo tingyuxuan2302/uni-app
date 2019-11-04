@@ -22,7 +22,8 @@
 			value: {
 				type: String,
 				default: ''
-			}
+			},
+			getName: Function
 		},
 		data() {
 			return {
@@ -73,7 +74,7 @@
 				var name = nav.name;
 				//改变当前选中的tab，触发watch
 				this.currentName = name;
-				this.$emit('getName', name);
+				this.$emit('getName', name, index);
 			}
 		},
 		watch: {
