@@ -10,12 +10,12 @@
 ```
 组件参数：
 ---
-tab
+tab  
 参数|类型|默认值|描述
 ---|--|--|---
 value|String|""|默认需要选中的tab标签
 ---
-tabPanel
+tabPanel  
 参数|类型|默认值|描述
 ---|--|--|---
 name|String|""|设置panel的标识,对应tab的value
