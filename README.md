@@ -1,12 +1,22 @@
+# 安装
+`npm install uni-app-component`  
+# 引用(在项目中引入对应组件)
+`import ComponentName from 'uni-app-component/components/xxx/xxx.vue';` 
 # 组件
 ## *1.tab*(demo：/pages/demo-tab)
 ```
-    <Tab value="c">
-    	<TabPanel name="a" label="体育">1111</TabPanel>
-    	<TabPanel name="b" label="娱乐">2222</TabPanel>
-    	<TabPanel name="c" label="搞笑">3333</TabPanel>
-    	<TabPanel name="d" label="新闻">4444</TabPanel>
-    </Tab>
+	<template>
+		<Tab value="c">
+			<TabPanel name="a" label="体育">1111</TabPanel>
+			<TabPanel name="b" label="娱乐">2222</TabPanel>
+			<TabPanel name="c" label="搞笑">3333</TabPanel>
+			<TabPanel name="d" label="新闻">4444</TabPanel>
+		</Tab>
+	</template>
+    <script>
+		import Tab from 'uni-app-component/components/tab/tabs.vue';
+		import TabPanel from 'uni-app-component/components/tab/tabPanel.vue'; 
+	</script>
 ```
 组件参数：
 ---
