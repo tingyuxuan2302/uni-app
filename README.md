@@ -3,7 +3,7 @@
 # 引用(在项目中引入对应组件)
 `import ComponentName from 'uni-app-component/components/xxx/xxx.vue';` 
 # 组件
-## *1.tab*(demo：/pages/demo-tab)
+## **1.tab**(demo：/pages/demo-tab)
 > 注意⚠️：该组件由于uni-app自身编译问题，目前仅支持微信、百度、头条小程序，看源码tab/tabs.vue可以发现在mounted的时候对获取标签做了不同对处理，如果有同学使用的时候仍然展示不出tab,只展示内容对话,可采用this.$nextTick(function() {this.updateNav()})或者给setTimout更大的延迟做试验。而支付宝小程序我是没着了，有大佬封装好的话望告知，谢谢🙏。
 ```
 <template>
@@ -38,7 +38,7 @@ className|String|""|class名
 
 ---  
 
-## *2.my-image*(demo：/pages/demo-image)
+## **2.my-image**(demo：/pages/demo-image)
 ```
 <template>
 	<MyImage
