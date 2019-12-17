@@ -21,14 +21,14 @@
 ```
 组件参数：
 ---
-tab
+*tab*
 ---  
 参数|类型|默认值|描述
 ---|--|--|---
 value|String|""|默认需要选中的tab标签
 getName|Function|(name, index) => {}|标签选中的回调；  name: 对应标签的name；  index:对应标签的下标
 ---
-tabPanel  
+*tabPanel*
 ---
 参数|类型|默认值|描述
 ---|--|--|---
@@ -52,9 +52,7 @@ className|String|""|class名
 </script>
 ```
 组件参数：
----
-tab
----  
+
 参数|类型|默认值|描述
 ---|--|--|---
 imgUrl|String|""|图片地址src
