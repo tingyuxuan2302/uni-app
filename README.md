@@ -63,5 +63,5 @@ imgLazyLoad|Boolean|false|图片懒加载。只针对page与scroll-view下的ima
 imgFadeShow|Boolean|true|图片显示动画效果
 imgError|Function|() => {}|当错误发生时，发布到 AppService 的事件名，事件对象event.detail = {errMsg: 'something wrong'}
 imgLoad|Function|() => {}|当图片载入完毕时，发布到 AppService 的事件名，事件对象event.detail = {height:'图片高度px', width:'图片宽度px'}
-errDefImgUrl|String|'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576595941414&di=83f062cc570e15b3a95b94274c018f33&imgtype=0&src=http%3A%2F%2Fcdn.duitang.com%2Fuploads%2Fitem%2F201411%2F23%2F20141123144736_2ntsu.thumb.700_0.jpeg'|onError时默认展示的图片
+errDefImgUrl|String|'在组件中，可自行查看'|onError时默认展示的图片
 ---
