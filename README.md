@@ -34,3 +34,34 @@ tabPanel
 name|String|""|设置panel的标识,对应tab的value
 label|String|""|tab标签标题
 className|String|""|class名
+
+---
+
+## *2.my-image*(demo：/pages/demo-image)
+```
+<template>
+	<MyImage
+		:imgUrl.sync="imgUrl"
+		className="img"
+		@imgError="imgError"
+	></MyImage>
+</template>
+<script>
+	import MyImage from '@/components/my-image/my-image.vue';
+</script>
+```
+组件参数：
+---
+tab
+---  
+参数|类型|默认值|描述
+---|--|--|---
+imgUrl|String|""|图片地址src
+className|String|""|class
+imgMode|String|"scaleToFill"|图片裁剪、缩放的模式
+imgLazyLoad|Boolean|false|图片懒加载。只针对page与scroll-view下的image有效
+imgFadeShow|Boolean|true|图片显示动画效果
+imgError|Function|() => {}|当错误发生时，发布到 AppService 的事件名，事件对象event.detail = {errMsg: 'something wrong'}
+imgLoad|Function|() => {}|当图片载入完毕时，发布到 AppService 的事件名，事件对象event.detail = {height:'图片高度px', width:'图片宽度px'}
+errDefImgUrl|String|'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576595941414&di=83f062cc570e15b3a95b94274c018f33&imgtype=0&src=http%3A%2F%2Fcdn.duitang.com%2Fuploads%2Fitem%2F201411%2F23%2F20141123144736_2ntsu.thumb.700_0.jpeg'|onError时默认展示的图片
+---

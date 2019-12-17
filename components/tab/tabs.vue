@@ -35,6 +35,9 @@
 			
 		},
 		mounted() {
+			// #ifdef MP-TOUTIAO
+				setTimeout(this.updateNav, 0)
+			// #endif
 			this.updateNav();
 		},
 		methods: {
