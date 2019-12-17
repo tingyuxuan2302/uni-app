@@ -36,7 +36,7 @@ name|String|""|设置panel的标识,对应tab的value
 label|String|""|tab标签标题
 className|String|""|class名
 
----
+---  
 
 ## *2.my-image*(demo：/pages/demo-image)
 ```
